@@ -35,50 +35,6 @@
     },
     {
       "type": 1,
-      "title": "webcache-dns-5",
-      "name": "webcache-dns-5",
-      "description": "DNS that redirects SPECIFIC game services to the proxy cache instance",
-      "categories": ["dns"],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "lancachenet/lancache-dns:latest",
-      "ports": [ "192.168.88.5:53:53/udp" ],
-      "env": [
-        { "name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "default": "192.168.88.1" },
-        { "name": "STEAMCACHE_IP", "label": "STEAMCACHE_IP", "default": "192.168.88.15" },
-        { "name": "WINDOWSCACHE_IP", "label": "WINDOWSCACHE_IP", "default": "192.168.88.15" },
-        { "name": "BLIZZARDCACHE_IP", "label": "BLIZZARDCACHE_IP", "default": "192.168.88.15" },
-        { "name": "ORIGINCACHE_IP", "label": "ORIGINCACHE_IP", "default": "192.168.88.15" },
-        { "name": "RIOTCACHE_IP", "label": "RIOTCACHE_IP", "default": "192.168.88.15" },
-        { "name": "EPICGAMESCACHE_IP", "label": "EPICGAMESCACHE_IP", "default": "192.168.88.15" },
-        { "name": "NINTENDOCACHE_IP", "label": "NINTENDOCACHE_IP", "default": "192.168.88.15" },
-        { "name": "UPLAYCACHE_IP", "label": "UPLAYCACHE_IP", "default": "192.168.88.15" }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "webcache-dns-6",
-      "name": "webcache-dns-6",
-      "description": "DNS that redirects SPECIFIC game services to the proxy cache instance",
-      "categories": ["dns"],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "lancachenet/lancache-dns:latest",
-      "ports": [ "192.168.88.6:53:53/udp" ],
-      "env": [
-        { "name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "default": "192.168.88.1" },
-        { "name": "STEAMCACHE_IP", "label": "STEAMCACHE_IP", "default": "192.168.88.15" },
-        { "name": "WINDOWSCACHE_IP", "label": "WINDOWSCACHE_IP", "default": "192.168.88.15" },
-        { "name": "BLIZZARDCACHE_IP", "label": "BLIZZARDCACHE_IP", "default": "192.168.88.15" },
-        { "name": "ORIGINCACHE_IP", "label": "ORIGINCACHE_IP", "default": "192.168.88.15" },
-        { "name": "RIOTCACHE_IP", "label": "RIOTCACHE_IP", "default": "192.168.88.15" },
-        { "name": "EPICGAMESCACHE_IP", "label": "EPICGAMESCACHE_IP", "default": "192.168.88.15" },
-        { "name": "NINTENDOCACHE_IP", "label": "NINTENDOCACHE_IP", "default": "192.168.88.15" },
-        { "name": "UPLAYCACHE_IP", "label": "UPLAYCACHE_IP", "default": "192.168.88.15" }
-      ]
-    },
-    {
-      "type": 1,
       "title": "teamspeak3-server",
       "name": "teamspeak3-server",
       "description": "Internal TeamSpeak 3 Server",
@@ -86,11 +42,10 @@
       "platform": "linux",
       "privileged": true,
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "aheil/teamspeak3-server:latest",
+      "image": "teamspeak:latest",
       "ports": [ "9987:9987/udp", "10011:10011/tcp", "30033:30033/tcp" ],
       "env": [
-        { "name": "TS3SERVER_LICENSE", "label": "TS3SERVER_LICENSE", "default": "accept" },
-        { "name": "TS_VERSION", "label": "TS_VERSION", "default": "3.5.0" }
+        { "name": "TS3SERVER_LICENSE", "label": "TS3SERVER_LICENSE", "default": "accept" }
       ]
     },
     {
@@ -142,19 +97,6 @@
         { "name": "GF_INSTALL_PLUGINS", "label": "GF_INSTALL_PLUGINS", "default": "grafana-clock-panel,grafana-simple-json-datasource" },
         { "name": "GF_SERVER_ROOT_URL", "label": "GF_SERVER_ROOT_URL", "default": "http://buttergraf.butterlan.space:3000" }
       ]    
-    },
-    {
-      "type": 1,
-      "title": "factorio",
-      "name": "factorio",
-      "description": "Standard Factorio Server",
-      "categories": ["games"],
-      "platform": "linux",
-      "privileged": true,
-      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "dtandersen/factorio:latest",
-      "ports": [ "27015:27015/tcp", "34197:34197/udp" ],
-      "volumes": [ { "container": "/factorio", "bind": "/mnt/game/factorio" } ]
     }
   ]
 }
