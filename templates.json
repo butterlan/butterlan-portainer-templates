@@ -169,6 +169,20 @@
     },
     {
       "type": 1,
+      "title": "chivalry-server",
+      "name": "chivalry-server",
+      "description": "Chivalry Dedicated Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "apetomate/chivalry-server",
+      "ports": [ "27015:27015/udp", "8000:8000/udp" ],
+      "volumes": [
+        { "container": "/opt/chivalry", "bind": "/data/chivalry-server" } ]
+    },
+    {
+      "type": 1,
       "title": "influxdb",
       "name": "influxdb",
       "description": "Time Series Database",
