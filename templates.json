@@ -74,6 +74,62 @@
     },
     {
       "type": 1,
+      "title": "vrising-pvp",
+      "name": "vrising-pvp",
+      "description": "V-Rising PVP Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "didstopia/vrising-server",
+      "ports": [ "9876:9876/udp", "9877:9877/udp", "9878:9878/tcp" ],
+      "env": [
+        { "name": "V_RISING_SERVER_PERSISTENT_DATA_PATH", "label": "V_RISING_SERVER_PERSISTENT_DATA_PATH", "default": "/app/vrising-pvp" },
+        { "name": "V_RISING_SERVER_BRANCH", "label": "V_RISING_SERVER_BRANCH", "default": "public" },
+        { "name": "V_RISING_SERVER_START_MODE", "label": "V_RISING_SERVER_START_MODE", "default": 0 },
+        { "name": "V_RISING_SERVER_UPDATE_MODE", "label": "V_RISING_SERVER_UPDATE_MODE", "default": 1 },
+        { "name": "V_RISING_SERVER_RCON_ENABLED", "label": "V_RISING_SERVER_RCON_ENABLED", "default": true },
+        { "name": "V_RISING_SERVER_RCON_PASSWORD", "label": "V_RISING_SERVER_RCON_PASSWORD", "default": "<changeme>" },
+        { "name": "V_RISING_SERVER_NAME", "label": "V_RISING_SERVER_NAME", "default": "Butterlan V-Rising PVP Server" },
+        { "name": "V_RISING_SERVER_DESCRIPTION", "label": "V_RISING_SERVER_DESCRIPTION", "default": "Fast Progress Server" },
+        { "name": "V_RISING_SERVER_SAVE_NAME", "label": "V_RISING_SERVER_SAVE_NAME", "default": "vrising-pvp" },
+        { "name": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "label": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "default": "false" },
+        { "name": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "label": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "default": "StandardPVP" }
+      ],
+      "volumes": [
+        { "container": "/app/vrising-pvp", "bind": "/data/vrising-pvp/saves" },
+        { "container": "/steamcmd/vrising" } ]
+    },
+    {
+      "type": 1,
+      "title": "vrising-pve",
+      "name": "vrising-pve",
+      "description": "V-Rising PVE Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "didstopia/vrising-server",
+      "ports": [ "9876:9876/udp", "9877:9877/udp", "9878:9878/tcp" ],
+      "env": [
+        { "name": "V_RISING_SERVER_PERSISTENT_DATA_PATH", "label": "V_RISING_SERVER_PERSISTENT_DATA_PATH", "default": "/app/vrising-pve" },
+        { "name": "V_RISING_SERVER_BRANCH", "label": "V_RISING_SERVER_BRANCH", "default": "public" },
+        { "name": "V_RISING_SERVER_START_MODE", "label": "V_RISING_SERVER_START_MODE", "default": 0 },
+        { "name": "V_RISING_SERVER_UPDATE_MODE", "label": "V_RISING_SERVER_UPDATE_MODE", "default": 1 },
+        { "name": "V_RISING_SERVER_RCON_ENABLED", "label": "V_RISING_SERVER_RCON_ENABLED", "default": true },
+        { "name": "V_RISING_SERVER_RCON_PASSWORD", "label": "V_RISING_SERVER_RCON_PASSWORD", "default": "<changeme>" },
+        { "name": "V_RISING_SERVER_NAME", "label": "V_RISING_SERVER_NAME", "default": "Butterlan V-Rising PVE Server" },
+        { "name": "V_RISING_SERVER_DESCRIPTION", "label": "V_RISING_SERVER_DESCRIPTION", "default": "Fast Progress Server" },
+        { "name": "V_RISING_SERVER_SAVE_NAME", "label": "V_RISING_SERVER_SAVE_NAME", "default": "vrising-pve" },
+        { "name": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "label": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "default": "false" },
+        { "name": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "label": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "default": "StandardPVE" }
+      ],
+      "volumes": [
+        { "container": "/app/vrising-pve", "bind": "/data/vrising-pve/saves" },
+        { "container": "/steamcmd/vrising" } ]
+    },
+    {
+      "type": 1,
       "title": "influxdb",
       "name": "influxdb",
       "description": "Time Series Database",
@@ -86,7 +142,7 @@
       "env": [
         { "name": "INFLUXDB_HTTP_AUTH_ENABLED", "label": "INFLUXDB_HTTP_AUTH_ENABLED", "default": "true" },
         { "name": "INFLUXDB_ADMIN_USER", "label": "INFLUXDB_ADMIN_USER", "default": "dbadmin" },
-        { "name": "INFLUXDB_ADMIN_PASSWORD", "label": "INFLUXDB_ADMIN_PASSWORD", "default": "<set-pw>" },
+        { "name": "INFLUXDB_ADMIN_PASSWORD", "label": "INFLUXDB_ADMIN_PASSWORD", "default": "<changeme>" },
         { "name": "INFLUXDB", "label": "INFLUXDB", "default": "telegraf" },
         { "name": "INFLUXDB_BIND_ADDRESS", "label": "INFLUXDB_BIND_ADDRESS", "default": "0.0.0.0:8088" }
       ],
