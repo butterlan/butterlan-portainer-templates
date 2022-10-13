@@ -189,18 +189,6 @@
     },
     {
       "type": 1,
-      "title": "telegraf-docker",
-      "name": "telegraf-docker",
-      "description": "Data Collection for Docker Only",
-      "categories": ["statistics"],
-      "platform": "linux",
-      "privileged": true,
-      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "apetomate/butterlan-telegraf",
-      "volumes": [ { "container": "/var/run/docker.sock", "bind": "/var/run/docker.sock", "readonly": true } ]
-    },
-    {
-      "type": 1,
       "title": "grafana",
       "name": "grafana",
       "description": "Grafana",
