@@ -70,7 +70,7 @@
         { "name": "SRCDS_MAPGROUP", "label": "SRCDS_MAPGROUP", "default": "mg_allclassic" },
         { "name": "SRCDS_HOSTNAME", "label": "SRCDS_HOSTNAME", "default": "ButterStrike:GO" }
       ],
-      "volumes": [ { "container": "/home/steam/csgo-dedicated/", "bind": "/data/influxdb" } ]
+      "volumes": [ { "container": "/home/steam/csgo-dedicated" } ]
     },
     {
       "type": 1,
@@ -90,7 +90,7 @@
         { "name": "INFLUXDB", "label": "INFLUXDB", "default": "telegraf" },
         { "name": "INFLUXDB_BIND_ADDRESS", "label": "INFLUXDB_BIND_ADDRESS", "default": "0.0.0.0:8088" }
       ],
-      "volumes": [ { "container": "/home/steam/csgo-dedicated" } ]
+      "volumes": [ { "container": "/var/lib/influxdb", "bind": "/data/influxdb" } ]
     },
     {
       "type": 1,
