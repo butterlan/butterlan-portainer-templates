@@ -130,6 +130,45 @@
     },
     {
       "type": 1,
+      "title": "minecraft-creative",
+      "name": "minecraft-creative",
+      "description": "Minecraft Bedrock Creative Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "itzg/minecraft-bedrock-server",
+      "ports": [ "19132:19132/udp" ],
+      "env": [
+        { "name": "SERVER_NAME", "label": "SERVER_NAME", "default": "Buttercraft Creative Server" },
+        { "name": "EULA", "label": "EULA", "default": "TRUE" },
+        { "name": "GAMEMODE", "label": "GAMEMODE", "default": "creative" }
+      ],
+      "volumes": [
+        { "container": "/data" } ]
+    },
+    {
+      "type": 1,
+      "title": "minecraft-survival",
+      "name": "minecraft-survival",
+      "description": "Minecraft Bedrock Survival Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "itzg/minecraft-bedrock-server",
+      "ports": [ "19132:19132/udp" ],
+      "env": [
+        { "name": "SERVER_NAME", "label": "SERVER_NAME", "default": "Buttercraft Survival Server" },
+        { "name": "EULA", "label": "EULA", "default": "TRUE" },
+        { "name": "GAMEMODE", "label": "GAMEMODE", "default": "survival" },
+        { "name": "DIFFICULTY", "label": "DIFFICULTY", "default": "normal" }
+      ],
+      "volumes": [
+        { "container": "/data" } ]
+    },
+    {
+      "type": 1,
       "title": "influxdb",
       "name": "influxdb",
       "description": "Time Series Database",
