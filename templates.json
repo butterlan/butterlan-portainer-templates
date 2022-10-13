@@ -14,7 +14,7 @@
       "env": [
         { "name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "default": "192.168.88.1" },
         { "name": "USE_GENERIC_CACHE", "label": "USE_GENERIC_CACHE", "default": "true" },
-        { "name": "LANCACHE_IP", "label": "LANCACHE_IP", "default": "192.168.88.15" }
+        { "name": "LANCACHE_IP", "label": "LANCACHE_IP", "default": "192.168.88.15 192.168.88.16 192.168.88.17 192.168.88.18 192.168.88.19 192.168.88.20" }
       ]
     },
     {
@@ -30,7 +30,7 @@
       "env": [
         { "name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "default": "192.168.88.1" },
         { "name": "USE_GENERIC_CACHE", "label": "USE_GENERIC_CACHE", "default": "true" },
-        { "name": "LANCACHE_IP", "label": "LANCACHE_IP", "default": "192.168.88.15" }
+        { "name": "LANCACHE_IP", "label": "LANCACHE_IP", "default": "192.168.88.15 192.168.88.16 192.168.88.17 192.168.88.18 192.168.88.19 192.168.88.20" }
       ]
     },
     {
