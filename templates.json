@@ -57,7 +57,7 @@
       "platform": "linux",
       "privileged": true,
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "apefrei/docker-csgo-esl",
+      "image": "cm2network/csgo:latest",
       "ports": [ "27015:27015/tcp", "27020:27020/tcp", "27015:27015/udp", "27020:27020/udp" ],
       "env": [
         { "name": "SRCDS_TOKEN", "label": "SRCDS_TOKEN", "default": "<changeme>" },
@@ -69,7 +69,8 @@
         { "name": "SRCDS_STARTMAP", "label": "SRCDS_STARTMAP", "default": "de_dust2" },
         { "name": "SRCDS_MAPGROUP", "label": "SRCDS_MAPGROUP", "default": "mg_allclassic" },
         { "name": "SRCDS_HOSTNAME", "label": "SRCDS_HOSTNAME", "default": "ButterStrike:GO" }
-      ]
+      ],
+      "volumes": [ { "container": "/home/steam/csgo-dedicated/", "bind": "/data/influxdb" } ]
     },
     {
       "type": 1,
@@ -89,7 +90,7 @@
         { "name": "INFLUXDB", "label": "INFLUXDB", "default": "telegraf" },
         { "name": "INFLUXDB_BIND_ADDRESS", "label": "INFLUXDB_BIND_ADDRESS", "default": "0.0.0.0:8088" }
       ],
-      "volumes": [ { "container": "/var/lib/influxdb", "bind": "/data/influxdb" } ]
+      "volumes": [ { "container": "/home/steam/csgo-dedicated" } ]
     },
     {
       "type": 1,
