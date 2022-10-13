@@ -57,8 +57,8 @@
       "platform": "linux",
       "privileged": true,
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "cm2network/csgo",
-      "ports": [ "9987:9987/udp", "10011:10011/tcp", "30033:30033/tcp" ],
+      "image": "apefrei/docker-csgo-esl",
+      "ports": [ "27015:27015/tcp", "27020:27020/tcp", "27015:27015/udp", "27020:27020/udp" ],
       "env": [
         { "name": "SRCDS_TOKEN", "label": "SRCDS_TOKEN", "default": "<changeme>" },
         { "name": "SRCDS_RCONPW", "label": "SRCDS_RCONPW", "default": "<changeme>" },
@@ -67,7 +67,7 @@
         { "name": "SRCDS_TV_PORT", "label": "SRCDS_TV_PORT", "default": 27020 },
         { "name": "SRCDS_MAXPLAYERS", "label": "SRCDS_MAXPLAYERS", "default": 12 },
         { "name": "SRCDS_STARTMAP", "label": "SRCDS_STARTMAP", "default": "de_dust2" },
-        { "name": "SRCDS_MAPGROUP", "label": "SRCDS_MAPGROUP", "default": "mg_active" },
+        { "name": "SRCDS_MAPGROUP", "label": "SRCDS_MAPGROUP", "default": "mg_allclassic" },
         { "name": "SRCDS_HOSTNAME", "label": "SRCDS_HOSTNAME", "default": "ButterStrike:GO" }
       ]
     },
