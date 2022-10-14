@@ -89,6 +89,9 @@
         { "name": "RCON_PASSWORD", "label": "RCON_PASSWORD", "default": "<changeme>" },
         { "name": "STEAM_ACCOUNT", "label": "STEAM_ACCOUNT", "default": "<changeme>" },
         { "name": "TICKRATE", "label": "TICKRATE", "default": 128 },
+        { "name": "MAP", "label": "MAP", "default": "de_dust2" },
+        { "name": "MAPGROUP", "label": "MAPGROUP", "default": "mg_butterlan" },
+        { "name": "MAXPLAYERS", "label": "MAXPLAYERS", "default": 12 },
         { "name": "LAN", "label": "LAN", "default": 1 }
       ],
       "volumes": [ { "container": "/home/steam/csgo" } ]
