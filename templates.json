@@ -74,6 +74,27 @@
     },
     {
       "type": 1,
+      "title": "csgo-server",
+      "name": "csgo-server",
+      "description": "CS:GO Server",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "capetomate/csgo-server:latest",
+      "ports": [ "27015:27015/tcp", "27020:27020/tcp", "27015:27015/udp", "27020:27020/udp" ],
+      "env": [
+        { "name": "SERVER_HOSTNAME", "label": "SERVER_HOSTNAME", "default": "Butterlan CS:GO" },
+        { "name": "SERVER_PASSWORD", "label": "SERVER_PASSWORD", "default": "" },
+        { "name": "RCON_PASSWORD", "label": "RCON_PASSWORD", "default": "<changeme>" },
+        { "name": "STEAM_ACCOUNT", "label": "STEAM_ACCOUNT", "default": "<changeme>" },
+        { "name": "TICKRATE", "label": "TICKRATE", "default": 128 },
+        { "name": "LAN", "label": "LAN", "default": 1 }
+      ],
+      "volumes": [ { "container": "/home/steam/csgo" } ]
+    },
+    {
+      "type": 1,
       "title": "vrising-pvp",
       "name": "vrising-pvp",
       "description": "V-Rising PVP Server",
