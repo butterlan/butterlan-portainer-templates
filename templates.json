@@ -81,7 +81,7 @@
       "platform": "linux",
       "privileged": true,
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
-      "image": "capetomate/csgo-server:latest",
+      "image": "apetomate/csgo-server:latest",
       "ports": [ "27015:27015/tcp", "27020:27020/tcp", "27015:27015/udp", "27020:27020/udp" ],
       "env": [
         { "name": "SERVER_HOSTNAME", "label": "SERVER_HOSTNAME", "default": "Butterlan CS:GO" },
