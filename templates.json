@@ -179,6 +179,10 @@
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
       "image": "apetomate/chivalry-server",
       "ports": [ "27015:27015/udp", "8000:8000/udp" ],
+      "env": [
+        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/chivalry/PCServer-UDKGame.ini" },
+        { "name": "STARTMAP", "label": "STARTMAP", "default": "AOCTD-Moor_P" }
+      ],
       "volumes": [
         { "container": "/opt/chivalry" } ]
     },
