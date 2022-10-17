@@ -180,7 +180,7 @@
       "image": "apetomate/chivalry-server",
       "ports": [ "27015:27015/udp", "8000:8000/udp" ],
       "volumes": [
-        { "container": "/opt/chivalry", "bind": "/data/chivalry-server" } ]
+        { "container": "/opt/chivalry" } ]
     },
     {
       "type": 1,
