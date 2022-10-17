@@ -181,7 +181,9 @@
       "ports": [ "27015:27015/udp", "8000:8000/udp" ],
       "env": [
         { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/chivalry/PCServer-UDKGame.ini" },
-        { "name": "STARTMAP", "label": "STARTMAP", "default": "AOCTD-Moor_P" }
+        { "name": "STARTMAP", "label": "STARTMAP", "default": "AOCTD-Moor_P" },
+        { "name": "GAMEPORT", "label": "GAMEPORT", "default": 8000 },
+        { "name": "QUERYPORT", "label": "QUERYPORT", "default": 27015 }
       ],
       "volumes": [
         { "container": "/opt/chivalry" } ]
