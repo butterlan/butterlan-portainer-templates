@@ -72,8 +72,8 @@
         { "name": "MAPGROUP", "label": "MAPGROUP", "default": "mg_butterlan" },
         { "name": "MAXPLAYERS", "label": "MAXPLAYERS", "default": 12 },
         { "name": "USECONFIG", "label": "USECONFIG", "default": "butterlan.cfg" },
-        { "name": "GAMEMODESURL", "label": "GAMEMODESURL", "default": "https://github.com/apefrei/butterlan-gameserver-configs/raw/main/csgo/gamemodes_server.txt" },
-        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://github.com/apefrei/butterlan-gameserver-configs/raw/main/csgo/butterlan.cfg" },
+        { "name": "GAMEMODESURL", "label": "GAMEMODESURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/gamemodes_server.txt" },
+        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/butterlan.cfg" },
         { "name": "LAN", "label": "LAN", "default": 1 }
       ],
       "volumes": [ { "container": "/home/steam/csgo" } ]
