@@ -51,8 +51,8 @@
     {
       "type": 1,
       "title": "csgo-server",
-      "name": "csgo-server",
-      "description": "CS:GO Server",
+      "name": "csgo-server1",
+      "description": "CS:GO Server with Butterlan confs",
       "categories": ["gameserver"],
       "platform": "linux",
       "privileged": true,
