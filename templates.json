@@ -223,7 +223,7 @@
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
       "image": "grafana/grafana",
       "ports": [ "192.168.88.7:3000:3000/tcp" ],
-      "volumes": [ { "container": "/var/lib/grafana" } ],
+      "volumes": [ { "container": "/var/lib/grafana-oss" } ],
       "env": [
         { "name": "GRAFANA_VERSION", "label": "GRAFANA_VERSION", "default": "latest" },
         { "name": "GF_INSTALL_PLUGINS", "label": "GF_INSTALL_PLUGINS", "default": "grafana-clock-panel,grafana-simple-json-datasource,simpod-json-datasource" },
