@@ -203,13 +203,12 @@
       "privileged": true,
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
       "image": "influxdb:latest",
-      "ports": [ "192.168.88.8:8086:8086/tcp", "192.168.88.8:8088:8088/tcp" ],
+      "ports": [ "192.168.88.8:8086:8086/tcp" ],
       "env": [
-        { "name": "INFLUXDB_HTTP_AUTH_ENABLED", "label": "INFLUXDB_HTTP_AUTH_ENABLED", "default": "true" },
-        { "name": "INFLUXDB_ADMIN_USER", "label": "INFLUXDB_ADMIN_USER", "default": "dbadmin" },
-        { "name": "INFLUXDB_ADMIN_PASSWORD", "label": "INFLUXDB_ADMIN_PASSWORD", "default": "<changeme>" },
-        { "name": "INFLUXDB", "label": "INFLUXDB", "default": "telegraf" },
-        { "name": "INFLUXDB_BIND_ADDRESS", "label": "INFLUXDB_BIND_ADDRESS", "default": "0.0.0.0:8088" }
+        { "name": "DOCKER_INFLUXDB_INIT_USERNAME", "label": "DOCKER_INFLUXDB_INIT_USERNAME", "default": "butterlan" },
+        { "name": "DOCKER_INFLUXDB_INIT_PASSWORD", "label": "DOCKER_INFLUXDB_INIT_PASSWORD", "default": "<changeme>" },
+        { "name": "DOCKER_INFLUXDB_INIT_ORG", "label": "DOCKER_INFLUXDB_INIT_ORG", "default": "Butterlan" },
+        { "name": "DOCKER_INFLUXDB_INIT_BUCKET", "label": "DOCKER_INFLUXDB_INIT_BUCKET", "default": "Butterlan" }
       ],
       "volumes": [ { "container": "/var/lib/influxdb", "bind": "/data/influxdb" } ]
     },
