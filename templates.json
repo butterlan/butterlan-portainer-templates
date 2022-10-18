@@ -60,7 +60,7 @@
       "image": "apetomate/csgo-server:latest",
       "network": "host",
       "env": [
-        { "name": "SERVER_HOSTNAME", "label": "SERVER_HOSTNAME", "default": "Butterlan CS:GO" },
+        { "name": "SERVER_HOSTNAME", "label": "SERVER_HOSTNAME", "default": "Butterlan CS:GO - Server 1" },
         { "name": "SERVER_PASSWORD", "label": "SERVER_PASSWORD", "default": "" },
         { "name": "RCON_PASSWORD", "label": "RCON_PASSWORD", "default": "<changeme>" },
         { "name": "STEAM_ACCOUNT", "label": "STEAM_ACCOUNT", "default": "<changeme>" },
