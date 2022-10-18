@@ -59,7 +59,6 @@
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
       "image": "apetomate/csgo-server:latest",
       "network": "host",
-#      "ports": [ "27015:27015/tcp", "27020:27020/tcp", "27015:27015/udp", "27020:27020/udp" ],
       "env": [
         { "name": "SERVER_HOSTNAME", "label": "SERVER_HOSTNAME", "default": "Butterlan CS:GO" },
         { "name": "SERVER_PASSWORD", "label": "SERVER_PASSWORD", "default": "" },
@@ -182,7 +181,6 @@
       "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
       "image": "apetomate/chivalry-server",
       "network": "host",
-#      "ports": [ "27015:27015/udp", "8000:8000/udp" ],
       "env": [
         { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/chivalry/PCServer-UDKGame.ini" },
         { "name": "STARTMAP", "label": "STARTMAP", "default": "AOCTD-Moor_P" },
