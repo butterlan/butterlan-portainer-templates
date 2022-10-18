@@ -225,8 +225,8 @@
       "ports": [ "192.168.88.7:3000:3000/tcp" ],
       "volumes": [ { "container": "/var/lib/grafana" } ],
       "env": [
-        { "name": "GF_SECURITY_ADMIN_PASSWORD", "label": "GF_SECURITY_ADMIN_PASSWORD", "default": "<set-pw>" },
-        { "name": "GF_INSTALL_PLUGINS", "label": "GF_INSTALL_PLUGINS", "default": "grafana-clock-panel,grafana-simple-json-datasource" },
+        { "name": "GRAFANA_VERSION", "label": "GRAFANA_VERSION", "default": "latest" },
+        { "name": "GF_INSTALL_PLUGINS", "label": "GF_INSTALL_PLUGINS", "default": "grafana-clock-panel,grafana-simple-json-datasource,simpod-json-datasource" },
         { "name": "GF_SERVER_ROOT_URL", "label": "GF_SERVER_ROOT_URL", "default": "http://buttergraf.butterlan.space:3000" }
       ]    
     }
