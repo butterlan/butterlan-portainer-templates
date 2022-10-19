@@ -99,6 +99,9 @@
         { "name": "V_RISING_SERVER_NAME", "label": "V_RISING_SERVER_NAME", "default": "Butterlan V-Rising PVP Server" },
         { "name": "V_RISING_SERVER_DESCRIPTION", "label": "V_RISING_SERVER_DESCRIPTION", "default": "Fast Progress Server" },
         { "name": "V_RISING_SERVER_SAVE_NAME", "label": "V_RISING_SERVER_SAVE_NAME", "default": "vrising-pvp" },
+        { "name": "V_RISING_SERVER_GAME_PORT", "label": "V_RISING_SERVER_GAME_PORT", "default": 9876 },
+        { "name": "V_RISING_SERVER_QUERY_PORT", "label": "V_RISING_SERVER_QUERY_PORT", "default": 9877 },
+        { "name": "V_RISING_SERVER_RCON_PORT", "label": "V_RISING_SERVER_RCON_PORT", "default": 9878 },
         { "name": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "label": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "default": "false" },
         { "name": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "label": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "default": "StandardPVP" }
       ],
@@ -127,6 +130,9 @@
         { "name": "V_RISING_SERVER_NAME", "label": "V_RISING_SERVER_NAME", "default": "Butterlan V-Rising PVE Server" },
         { "name": "V_RISING_SERVER_DESCRIPTION", "label": "V_RISING_SERVER_DESCRIPTION", "default": "Fast Progress Server" },
         { "name": "V_RISING_SERVER_SAVE_NAME", "label": "V_RISING_SERVER_SAVE_NAME", "default": "vrising-pve" },
+        { "name": "V_RISING_SERVER_GAME_PORT", "label": "V_RISING_SERVER_GAME_PORT", "default": 9886 },
+        { "name": "V_RISING_SERVER_QUERY_PORT", "label": "V_RISING_SERVER_QUERY_PORT", "default": 9887 },
+        { "name": "V_RISING_SERVER_RCON_PORT", "label": "V_RISING_SERVER_RCON_PORT", "default": 9888 },
         { "name": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "label": "V_RISING_SERVER_LIST_ON_MNASTER_SERVER", "default": "false" },
         { "name": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "label": "V_RISING_SERVER_GAME_SETTINGS_PRESET", "default": "StandardPVE" }
       ],
