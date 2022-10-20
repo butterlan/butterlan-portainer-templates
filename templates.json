@@ -148,6 +148,7 @@
       "env": [
         { "name": "SERVER_NAME", "label": "SERVER_NAME", "default": "Buttercraft Creative Server" },
         { "name": "EULA", "label": "EULA", "default": "TRUE" },
+        { "name": "MAX_PLAYERS", "label": "MAX_PLAYERS", "default": 32 },
         { "name": "GAMEMODE", "label": "GAMEMODE", "default": "creative" }
       ],
       "volumes": [
@@ -167,6 +168,7 @@
       "env": [
         { "name": "SERVER_NAME", "label": "SERVER_NAME", "default": "Buttercraft Survival Server" },
         { "name": "EULA", "label": "EULA", "default": "TRUE" },
+        { "name": "MAX_PLAYERS", "label": "MAX_PLAYERS", "default": 32 },
         { "name": "GAMEMODE", "label": "GAMEMODE", "default": "survival" },
         { "name": "DIFFICULTY", "label": "DIFFICULTY", "default": "normal" }
       ],
