@@ -80,6 +80,33 @@
     },
     {
       "type": 1,
+      "title": "cs2-server",
+      "name": "cs2-butterlan1",
+      "description": "CS2 Server with Butterlan configuration",
+      "categories": ["gameserver"],
+      "platform": "linux",
+      "privileged": true,
+      "logo": "https://raw.githubusercontent.com/apefrei/butterlan-portainer-templates/main/butterlan-logo.png",
+      "image": "apetomate/cs2-server:latest",
+      "network": "host",
+      "env": [
+        { "name": "CS2_SERVERNAME", "label": "CS2_SERVERNAME", "default": "Butterlan CS2 - Server 1" },
+        { "name": "SRCDS_TOKEN", "label": "SRCDS_TOKEN", "default": "" },
+        { "name": "CS2_RCONPW", "label": "CS2_RCONPW", "default": "<changeme>" },
+        { "name": "CS2_LAN", "label": "CS2_LAN", "default": "1" },
+        { "name": "CS2_PORT", "label": "CS2_PORT", "default": "27015" },
+        { "name": "TV_ENABLE", "label": "TV_ENABLE", "default": "0" },
+        { "name": "TV_PORT", "label": "TV_PORT", "default": "27020" },
+        { "name": "CS2_STARTMAP", "label": "CS2_STARTMAP", "default": "de_inferno" },
+        { "name": "CS2_MAPGROUP", "label": "CS2_MAPGROUP", "default": "mg_butterlan" },
+        { "name": "CS2_MAXPLAYERS", "label": "CS2_MAXPLAYERS", "default": 10 },
+        { "name": "GAMEMODESURL", "label": "GAMEMODESURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/gamemodes_server.txt" },
+        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/butterlan.cfg" }
+      ],
+      "volumes": [ { "container": "/home/steam/cs2-dedicated/" } ]
+    },
+    {
+      "type": 1,
       "title": "vrising-pvp",
       "name": "vrising-pvp",
       "description": "V-Rising PVP Server",
