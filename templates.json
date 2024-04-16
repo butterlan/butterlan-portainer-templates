@@ -101,8 +101,10 @@
         { "name": "CS2_STARTMAP", "label": "CS2_STARTMAP", "default": "de_inferno" },
         { "name": "CS2_MAPGROUP", "label": "CS2_MAPGROUP", "default": "mg_butterlan" },
         { "name": "CS2_MAXPLAYERS", "label": "CS2_MAXPLAYERS", "default": 10 },
-        { "name": "GAMEMODESURL", "label": "GAMEMODESURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/gamemodes_server.txt" },
-        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/csgo/butterlan.cfg" }
+        { "name": "CS2_IP", "label": "CS2_IP", "default": "192.168.88.51" },
+        { "name": "CS2_GAMEALIAS", "label": "CS2_GAMEALIAS", "default": "ButterStrike" },
+        { "name": "GAMEMODESURL", "label": "GAMEMODESURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/cs2/gamemodes_server.txt" },
+        { "name": "CONFIGURL", "label": "CONFIGURL", "default": "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/cs2/butterlan.cfg" }
       ],
       "volumes": [ { "container": "/home/steam/cs2-dedicated/" } ]
     },
